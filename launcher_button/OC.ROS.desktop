@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Categories=WRS;Application;
+Name=OC.ROS
+GenericName=OC.ROS
+Icon=choreonoid.png
+Path=/home/wrs/.launcher/OC.ROS
+Exec=/home/wrs/.launcher/OC.ROS/10main.sh
+Terminal=false
+StartupNotify=true
+StartupWMClass=
+OnlyShowIn=Unity;
+X-UnitGenerated=true
