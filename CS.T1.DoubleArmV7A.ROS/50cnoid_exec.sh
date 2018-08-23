@@ -1,31 +1,17 @@
 #!/bin/bash -x
 
-. `basename $0`.conf
+. ${HOME}/.profile
+. ${HOME}/.profile.d/ROS.sh.disable
+
+#. `basename $0`.conf
+_current_dir="`pwd`"
+
+_project_dir="${HOME}/work/choreonoid.git/sample/WRS2018"
+_project_file="T1-DoubleArmV7A-ROS.py"
 
 ###
-{
-	# Qt5
-	export QT_STYLE_OVERRIDE=Cleanlooks
+gnome-terminal -e roscore
+sleep 1
 
-	#
-	export CNOID_USE_GLSL=1
-
-	# AGX
-	source /opt/Algoryx/AgX-2.23.0.5/setup_env.bash
-
-	# ROS
-	source /opt/ros/kinetic/setup.bash
-
-	# Choreonoid w/ROS Plugin
-	source $HOME/catkin_ws/devel/setup.bash
-
-	#export ROS_IP=10.1.1.10
-	#export ROS_MASTER_URI=http://10.1.1.1:11311
-
-	#
-	gnome-terminal -e roscore
-	sleep 1
-
-	#
-	choreonoid --python ${_project_dir}/${_project_file}
-}
+###
+choreonoid --python ${_project_dir}/${_project_file}

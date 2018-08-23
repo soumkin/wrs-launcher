@@ -4,7 +4,7 @@
 #
 
 # Top of Launcher.
-JL_TOPDIR=${HOME}/.launcher/
+JL_TOPDIR=${HOME}/.wrs/launcher/
 export JL_TOPDIR
 
 # Variables.
