@@ -5,7 +5,7 @@
 #. `basename $0`.conf
 _current_dir="`pwd`"
 
-_project_dir="${HOME}/work/choreonoid.git/sample/OpenRTM"
+_project_dir="${HOME}/work/Choreonoid/choreonoid.git/sample/OpenRTM"
 _project_file="OpenRTM-AizuSpider-Terminal.cnoid"
 
 ###
