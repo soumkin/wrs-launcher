@@ -28,6 +28,12 @@ ulimit -a
 echo ">>>>> env <<<<<"
 env
 
+echo ">>>>> set AGX License Key <<<<<"
+ls -al ${AGX_DIR}/agx.lic
+[ -f /media/wrs/*/agx.lic ] && cp -p /media/wrs/*/agx.lic ${AGX_DIR}/
+ls -al ${AGX_DIR}/agx.lic
+sleep 0.5
+
 #echo ">>>>> start omniNames <<<<<"
 #killall omniNames
 #sleep 0.5
@@ -38,7 +44,7 @@ env
 
 echo ">>>>> 50cnoid_exec.sh <<<<<"
 #killall choreonoid
-sleep 0.5
+#sleep 0.5
 ./50cnoid_exec.sh
 
 echo ">>>>> POST PROCEDURE <<<<<"
