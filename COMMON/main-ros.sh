@@ -34,12 +34,8 @@ ls -al ${AGX_DIR}/agx.lic
 ls -al ${AGX_DIR}/agx.lic
 sleep 0.5
 
-#echo ">>>>> start omniNames <<<<<"
-killall omniNames
-sleep 0.5
-rm -f omninames-*.log
-rm -f omninames-*.bak
-/usr/bin/omniNames -logdir . -errlog omniorb-nameserver.log -start &
+echo ">>>>> stop ROS process <<<<<"
+killall roscore
 sleep 0.5
 
 echo ">>>>> 50cnoid_exec.sh <<<<<"

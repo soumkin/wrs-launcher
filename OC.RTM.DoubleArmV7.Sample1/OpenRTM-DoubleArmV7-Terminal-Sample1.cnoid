@@ -47,7 +47,6 @@ views:
     id: 3
     plugin: Base
     class: SceneView
-    mounted: true
     state: 
       editMode: false
       viewpointControlMode: thirdPerson
@@ -112,14 +111,12 @@ views:
     id: 5
     plugin: Body
     class: BodyLinkView
-    mounted: true
     state: 
       showRotationMatrix: false
   - 
     id: 6
     plugin: Body
     class: JointSliderView
-    mounted: true
     state: 
       showAllJoints: true
       jointId: true
@@ -136,37 +133,41 @@ views:
     state: 
       listingMode: "Link Tree"
   - 
-    id: 9
+    id: 8
     name: "FRAME_FRONT_CAMERA"
     plugin: OpenRTM
     class: RTMImageView
+    mounted: true
   - 
-    id: 10
+    id: 9
     name: "WORK_RIGHT_VIEW"
     plugin: OpenRTM
     class: RTMImageView
   - 
-    id: 11
+    id: 10
     name: "WORK_LEFT_VIEW"
     plugin: OpenRTM
     class: RTMImageView
   - 
-    id: 12
+    id: 11
     name: "UF_BOTTOM_CAMERA"
     plugin: OpenRTM
     class: RTMImageView
+    mounted: true
   - 
-    id: 13
+    id: 12
     name: "UF_TOP_CAMERA"
     plugin: OpenRTM
     class: RTMImageView
+    mounted: true
   - 
-    id: 14
+    id: 13
     name: "UF_FRONT_CAMERA"
     plugin: OpenRTM
     class: RTMImageView
+    mounted: true
   - 
-    id: 15
+    id: 14
     name: "RTC Diagram"
     plugin: OpenRTM
     class: RTSDiagramView
@@ -174,20 +175,17 @@ views:
     state: 
       currentRTSItem: 1
   - 
-    id: 16
+    id: 15
     plugin: OpenRTM
     class: RTSNameServerView
     mounted: true
     state: 
       NameServers: 
         - 
-          host: "10.1.1.10"
-          port: 2809
-        - 
           host: "localhost"
           port: 2809
   - 
-    id: 17
+    id: 16
     plugin: Python
     class: PythonConsoleView
 toolbars: 
@@ -201,8 +199,6 @@ toolbars:
     speedScale: 1
     syncToOngoingUpdates: true
     autoExpansion: true
-  "LeggedBodyBar": 
-    stanceWidth: 0.15
   "KinematicsBar": 
     mode: AUTO
     enablePositionDragger: true
@@ -211,6 +207,8 @@ toolbars:
     snapDistance: 0.025
     penetrationBlockDepth: 0.0005
     lazyCollisionDetectionMode: true
+  "LeggedBodyBar": 
+    stanceWidth: 0.15
   "BodyMotionGenerationBar": 
     autoGenerationForNewBody: true
     balancer: false
@@ -272,12 +270,12 @@ viewAreas:
     contents: 
       type: splitter
       orientation: horizontal
-      sizes: [ 364, 1550 ]
+      sizes: [ 260, 1222 ]
       children: 
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 497, 496 ]
+          sizes: [ 431, 431 ]
           children: 
             - 
               type: pane
@@ -285,26 +283,44 @@ viewAreas:
               current: 1
             - 
               type: pane
-              views: [ 0, 7, 16 ]
-              current: 16
+              views: [ 0, 7, 15 ]
+              current: 15
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 711, 282 ]
+          sizes: [ 862, 0 ]
           children: 
             - 
               type: splitter
               orientation: horizontal
-              sizes: [ 811, 733 ]
+              sizes: [ 608, 608 ]
               children: 
                 - 
-                  type: pane
-                  views: [ 5, 6, 15 ]
-                  current: 15
+                  type: splitter
+                  orientation: vertical
+                  sizes: [ 428, 428 ]
+                  children: 
+                    - 
+                      type: pane
+                      views: [ 8 ]
+                      current: 8
+                    - 
+                      type: pane
+                      views: [ 14, 13 ]
+                      current: 14
                 - 
-                  type: pane
-                  views: [ 3, 8 ]
-                  current: 8
+                  type: splitter
+                  orientation: vertical
+                  sizes: [ 428, 428 ]
+                  children: 
+                    - 
+                      type: pane
+                      views: [ 12 ]
+                      current: 12
+                    - 
+                      type: pane
+                      views: [ 11 ]
+                      current: 11
             - 
               type: pane
               views: [ 2 ]

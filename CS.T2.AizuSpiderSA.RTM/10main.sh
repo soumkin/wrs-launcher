@@ -1,1 +1,1 @@
-../COMMON/main.sh
+../COMMON/main-openrtm.sh
