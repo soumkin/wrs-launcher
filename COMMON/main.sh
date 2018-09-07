@@ -43,8 +43,8 @@ rm -f omninames-*.bak
 sleep 0.5
 
 echo ">>>>> 50cnoid_exec.sh <<<<<"
-#killall choreonoid
-#sleep 0.5
+killall choreonoid
+sleep 0.5
 ./50cnoid_exec.sh
 
 echo ">>>>> POST PROCEDURE <<<<<"
