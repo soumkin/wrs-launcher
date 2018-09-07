@@ -5,7 +5,12 @@ _files="
 	CS.*/omninames-*.bak
 	CS.*/omninames-*.log
 	CS.*/run.*.log
+	CS.*/core
+	OC.*/omniorb-nameserver.log
+	OC.*/omninames-*.bak
+	OC.*/omninames-*.log
 	OC.*/run.*.log
+	OC.*/core
 "
 
 #/bin/ls ${_files} >/dev/null 2>&1

@@ -35,12 +35,12 @@ ls -al ${AGX_DIR}/agx.lic
 sleep 0.5
 
 #echo ">>>>> start omniNames <<<<<"
-#killall omniNames
-#sleep 0.5
-#rm -f omninames-*.log
-#rm -f omninames-*.bak
-#/usr/bin/omniNames -logdir . -errlog omniorb-nameserver.log -start &
-#sleep 0.5
+killall omniNames
+sleep 0.5
+rm -f omninames-*.log
+rm -f omninames-*.bak
+/usr/bin/omniNames -logdir . -errlog omniorb-nameserver.log -start &
+sleep 0.5
 
 echo ">>>>> 50cnoid_exec.sh <<<<<"
 #killall choreonoid
