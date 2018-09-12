@@ -1,1 +1,0 @@
-../COMMON/main-ros.sh
