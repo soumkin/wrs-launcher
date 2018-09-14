@@ -33,7 +33,8 @@ fi
 
 #
 echo ">>>>> start Choreonoid <<<<<"
-_proj_opt=${T0_PROJ_FILE:-""}
 _cnoid_cmd=${CNOID_CMD:-"choreonoid"}
+_var="`basename $PWD`_PROJ_FILE"
+_proj_opt="`eval echo '$'$_var`"
 #
 ${_cnoid_cmd} ${_proj_opt}
