@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Categories=WRS;Application;
+Name=T0.sample
+GenericName=T0.sample
+Icon=choreonoid.png
+Path=/home/wrs/.wrs/launcher/T0.sample
+Exec=/home/wrs/.wrs/launcher/T0.sample/10main.sh
+Terminal=false
+StartupNotify=true
+StartupWMClass=
+OnlyShowIn=Unity;
+X-UnitGenerated=true

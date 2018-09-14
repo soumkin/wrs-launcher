@@ -1,18 +1,12 @@
 #!/bin/sh
 
 _files="
-	CS.*/omniorb-nameserver.log
-	CS.*/omninames-*.bak
-	CS.*/omninames-*.log
-	CS.*/omninames-*.ckp
-	CS.*/run.*.log
-	CS.*/core
-	OC.*/omniorb-nameserver.log
-	OC.*/omninames-*.bak
-	OC.*/omninames-*.log
-	OC.*/omninames-*.ckp
-	OC.*/run.*.log
-	OC.*/core
+	T[0123456]*/omniorb-nameserver.log
+	T[0123456]*/omninames-*.bak
+	T[0123456]*/omninames-*.log
+	T[0123456]*/omninames-*.ckp
+	T[0123456]*/run.*.log
+	T[0123456]*/core
 "
 
 #/bin/ls ${_files} >/dev/null 2>&1

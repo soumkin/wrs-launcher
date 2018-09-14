@@ -3,13 +3,8 @@
 # $Id$
 #
 
-# Top of Launcher.
-JL_TOPDIR=${HOME}/.wrs/launcher/
-export JL_TOPDIR
-
-# Variables.
-#QT_GRAPHICSSYSTEM=raster
-#export QT_GRAPHICSSYSTEM
+#
+. ./launcher.conf
 
 # Unlimit core dump size.
 ulimit -c unlimited
@@ -28,15 +23,17 @@ ulimit -a
 echo ">>>>> env <<<<<"
 env
 
-echo ">>>>> set AGX License Key <<<<<"
-ls -al ${AGX_DIR}/agx.lic
-[ -f /media/wrs/*/agx.lic ] && cp -p /media/wrs/*/agx.lic ${AGX_DIR}/
-ls -al ${AGX_DIR}/agx.lic
-sleep 0.5
+echo ">>>>> set variables <<<<<"
+#QT_GRAPHICSSYSTEM=raster
+#export QT_GRAPHICSSYSTEM
 
-echo ">>>>> stop ROS process <<<<<"
-killall roscore
-sleep 0.5
+echo ">>>>> set AGX License Key <<<<<"
+if [ "x${USE_AGX}" == "xyes" -a ! -z "${AGX_DIR}" ]; then
+    ls -al ${AGX_DIR}/agx.lic
+    [ -f /media/wrs/*/agx.lic ] && cp -p /media/wrs/*/agx.lic ${AGX_DIR}/
+    ls -al ${AGX_DIR}/agx.lic
+    sleep 0.5
+fi
 
 echo ">>>>> 50cnoid_exec.sh <<<<<"
 killall choreonoid
