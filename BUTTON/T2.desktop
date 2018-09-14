@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Categories=WRS;Application;
+Name=T2.sample
+GenericName=T2
+Icon=choreonoid.png
+Path=/home/wrs/.wrs/launcher/T2
+Exec=/home/wrs/.wrs/launcher/T2/10main.sh
+Terminal=false
+StartupNotify=true
+StartupWMClass=
+OnlyShowIn=Unity;
+X-UnitGenerated=true
