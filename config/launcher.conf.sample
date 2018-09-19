@@ -7,10 +7,10 @@ USE_RTM="yes" # yes or no
 USE_ROS="no" # yes or no
 
 ###
-T1_1_PROJ_FILE="${HOME}/work/Choreonoid/choreonoid.git/sample/WRS2018/T1-DoubleArmV7A.py"
+T1_1_PROJ_FILE="${HOME}/choreonoid/sample/WRS2018/T1-DoubleArmV7A.py"
 T1_2_PROJ_FILE=""
-T2_PROJ_FILE="${HOME}/work/Choreonoid/choreonoid.git/sample/WRS2018/T2-DoubleArmV7A.py"
-T3_PROJ_FILE="${HOME}/work/Choreonoid/choreonoid.git/sample/WRS2018/T3-DoubleArmV7A.py"
-T4_PROJ_FILE="${HOME}/work/Choreonoid/choreonoid.git/sample/WRS2018/T4-DoubleArmV7A.py"
-T5_PROJ_FILE="${HOME}/work/Choreonoid/choreonoid.git/sample/WRS2018/T5-DoubleArmV7A.py"
-T6_PROJ_FILE="${HOME}/work/Choreonoid/choreonoid.git/sample/WRS2018/T6-DoubleArmV7A.py"
+T2_PROJ_FILE="${HOME}/choreonoid/sample/WRS2018/T2-DoubleArmV7A.py"
+T3_PROJ_FILE="${HOME}/choreonoid/sample/WRS2018/T3-DoubleArmV7A.py"
+T4_PROJ_FILE="${HOME}/choreonoid/sample/WRS2018/T4-DoubleArmV7A.py"
+T5_PROJ_FILE="${HOME}/choreonoid/sample/WRS2018/T5-DoubleArmV7A.py"
+T6_PROJ_FILE="${HOME}/choreonoid/sample/WRS2018/T6-DoubleArmV7A.py"
