@@ -1,2 +1,4 @@
 *~
-models/*
+config/launcher.conf
+config/rtc.conf
+model/*

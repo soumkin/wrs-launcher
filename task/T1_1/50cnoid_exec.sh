@@ -1,0 +1,1 @@
+../../bin/cnoid_exec.sh

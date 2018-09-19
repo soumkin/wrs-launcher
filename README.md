@@ -6,12 +6,12 @@
          $ cd $HOME/.wrs
          $ git clone https://github.com/soumkin/wrs-launcher launcher
 
-1. Make a link for $HOME/.wrs/launcher/BUTTON directory.
+1. Make a link for $HOME/.wrs/launcher/button directory.
 
 2. Move link(2.) to desktop.
 
 3. Customize for configuration files.
 
-    ex.) $ vi CONFIG/launcher.conf
-         $ vi CONFIG/rtc.conf
+    ex.) $ vi config/launcher.conf
+         $ vi config/rtc.conf
 
