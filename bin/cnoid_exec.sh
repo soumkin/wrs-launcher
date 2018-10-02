@@ -6,7 +6,12 @@
 #
 . ${HOME}/.profile
 if [ "x${USE_ROS}" == "xyes" ]; then
-    . ${HOME}/.profile.d/ROS.sh.disable
+    if [ -f ${HOME}/.profile.d/ROS.sh ]; then
+        . ${HOME}/.profile.d/ROS.sh
+    fi
+    if [ -f ${HOME}/.profile.d/ROS.sh.disable ]; then
+        . ${HOME}/.profile.d/ROS.sh.disable
+    fi
 fi
 
 #
