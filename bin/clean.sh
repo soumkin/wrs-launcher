@@ -7,6 +7,7 @@ _files="
 	task/T[0123456]*/omninames-*.ckp
 	task/T[0123456]*/run.*.log
 	task/T[0123456]*/core
+	task/T[0123456]*/core.*
 "
 
 #/bin/ls ${_files} >/dev/null 2>&1
