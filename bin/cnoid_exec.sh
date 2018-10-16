@@ -16,7 +16,7 @@ fi
 
 #
 echo ">>>>> start omniNames <<<<<"
-if [ "x${USE_RTM}" == "xyes" ]; then
+if [ "x${USE_OMNINAMES}" == "xyes" ]; then
     killall omniNames
     sleep 0.5
     rm -f omniorb-nameserver.log

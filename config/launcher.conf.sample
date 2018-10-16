@@ -4,6 +4,7 @@
 ###
 USE_AGX="yes" # yes or no
 USE_RTM="yes" # yes or no
+USE_OMNINAMES="yes" # yes or no
 USE_ROS="no" # yes or no
 
 ###
