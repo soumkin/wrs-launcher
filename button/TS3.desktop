@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Categories=WRS;Application;
+Name=TS3
+GenericName=TS3
+Icon=choreonoid.png
+Path=/home/wrs/.wrs/launcher/task/TS3
+Exec=/home/wrs/.wrs/launcher/task/TS3/10main.sh
+Terminal=false
+StartupNotify=true
+StartupWMClass=
+OnlyShowIn=Unity;
+X-UnitGenerated=true

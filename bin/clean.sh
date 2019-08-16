@@ -8,6 +8,13 @@ _files="
 	task/T[0123456]*/run.*.log
 	task/T[0123456]*/core
 	task/T[0123456]*/core.*
+	task/TS[01234]*/omniorb-nameserver.log
+	task/TS[01234]*/omninames-*.bak
+	task/TS[01234]*/omninames-*.log
+	task/TS[01234]*/omninames-*.ckp
+	task/TS[01234]*/run.*.log
+	task/TS[01234]*/core
+	task/TS[01234]*/core.*
 "
 
 #/bin/ls ${_files} >/dev/null 2>&1
