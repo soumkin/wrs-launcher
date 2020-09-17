@@ -42,4 +42,8 @@ _cnoid_cmd=${CNOID_CMD:-"choreonoid"}
 _var="`basename $PWD`_PROJ_FILE"
 _proj_opt="`eval echo '$'$_var`"
 #
-${_cnoid_cmd} ${_proj_opt}
+if [ "x${USE_ROS}" == "xyes" ]; then
+    rosrun choreonoid_ros choreonoid ${_proj_opt}
+else
+    ${_cnoid_cmd} ${_proj_opt}
+fi
