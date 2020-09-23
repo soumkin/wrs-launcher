@@ -32,7 +32,7 @@ echo ">>>>> start ROSCORE <<<<<"
 if [ "x${USE_ROS}" == "xyes" -a ! -z "$ROS_ROOT" ]; then
     killall roscore
     sleep 0.5
-    gnome-terminal -e roscore
+    gnome-terminal -- roscore
     sleep 1
 fi
 
