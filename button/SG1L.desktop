@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Categories=WRS;Application;
+Name=SG1L
+GenericName=SG1L
+Icon=choreonoid.png
+Path=/home/wrs/.wrs/launcher/task/SG1L
+Exec=/home/wrs/.wrs/launcher/task/SG1L/10main.sh
+Terminal=false
+StartupNotify=true
+StartupWMClass=
+OnlyShowIn=Unity;
+X-UnitGenerated=true
