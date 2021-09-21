@@ -1,1 +1,0 @@
-../../bin/move_cnoidlog.sh

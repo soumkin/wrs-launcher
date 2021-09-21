@@ -40,9 +40,6 @@ killall choreonoid
 sleep 0.5
 ./50cnoid_exec.sh
 
-echo ">>>>> 60move_cnoidlog.sh <<<<<"
-./60move_cnoidlog.sh
-
 echo ">>>>> POST PROCEDURE <<<<<"
 LC_ALL=C ls -alrt
 #LC_ALL=C ls -alrt /home/crash/core.*
