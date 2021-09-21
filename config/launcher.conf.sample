@@ -1,5 +1,6 @@
 ###
 #CNOID_CMD="/usr/local/bin/choreonoid"
+CNOID_PROJ_DIR="${HOME}/catkin_ws/devel/share/choreonoid-1.8/WRS2020/project"
 
 ###
 USE_AGX="yes" # yes or no
